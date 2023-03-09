@@ -39,7 +39,7 @@
           <picture class="header__logo">
             <source media="max-width: 767px;" srcset="./img/logo-mobile.png">
             <source media="(min-resolution: 2dppx) and (max-width: 767px)" srcset="./img/logo-mobile@2x.png">
-            <source media="min-resolution: 2dppx" srcset="./img/logo@2x.png">
+            <source media="(min-resolution: 2dppx)" srcset="./img/logo@2x.png">
             <img src="./img/logo.png" alt="Логотип Smart Device.">
           </picture>
           <ul class="header__list">
@@ -56,14 +56,76 @@
         </div>
       </header>
 
-      <main>
-        <div class="container">
-
+      <main class="main">
+        <div class="main__bg">
+          <div class="main__container">
+            <div class="main__heading heading">
+              <h1 class="heading__title">Печатные платы</h1>
+              <p class="heading__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <button class="heading__button">
+                <span class="heading__button-text-desktop">Получить бесплатную консультацию</span>
+                <span class="heading__button-text-mobile">Бесплатная консультация</span>
+              </button>
+            </div>
+          </div>
         </div>
       </main>
-      <footer>
-        <div class="container">
-
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__socials socials">
+            <picture class="footer__logo">
+              <source media="(min-resolution: 2dppx)" srcset="./img/logo@2x.png">
+              <img src="./img/logo.png" alt="Логотип Smart Device.">
+            </picture>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#">
+                  <img src="./img/svg/ok.svg" width="30px" height="30px" alt="Одноклассники.">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="./img/svg/vk.svg" width="30px" height="30px" alt="Вконтакте.">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="./img/svg/pinterest.svg" width="30px" height="30px" alt="Pinterest.">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__down">
+            <div class="footer__navigation navigation">
+              <p class="navigation__title">Разделы сайта
+                <span class="navigation__minus"></span>
+              </p>
+              <ul class="navigation__list">
+                <div class="navigation__left">
+                  <li class="navigation__item">О Компании</li>
+                  <li class="navigation__item">Продукты</li>
+                  <li class="navigation__item">Производство печатных плат</li>
+                  <li class="navigation__item">Монтаж печатных плат</li>
+                </div>
+                <div class="navigation__right">
+                  <li class="navigation__item">Комплектующие</li>
+                  <li class="navigation__item">Доставка</li>
+                  <li class="navigation__item">Контакты</li>
+                </div>
+              </ul>
+            </div>
+            <div class="footer__address address">
+                <p class="address__title">Наш офис
+                  <span class="address__minus"></span>
+                </p>
+                <ul class="address__list">
+                  <li class="address__item">г. Мытищи, Олимпийский проспект, д.10</li>
+                  <li class="address__item">+7 (495) 589-40-50</li>
+                  <li class="address__item">+7 (925) 389-58-29</li>
+                  <li class="address__item">+7 (925) 364-78-13</li>
+                </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

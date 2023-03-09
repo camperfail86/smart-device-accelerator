@@ -1,0 +1,44 @@
+@media (min-width: $vp-1024) {
+  .main__container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .main__bg {
+    background-image: url("../../../img/background.webp");
+    height: 760px;
+    margin-top: -40px;
+  }
+
+  .main {
+    color: $color-white;
+    font-family: $ff-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main__bg {
+    background-image: url("../../../img/background.png");
+    height: 540px;
+    margin-top: -40px;
+  }
+
+  .main {
+    color: $color-white;
+    font-family: $ff-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__bg {
+    margin-top: -35px;
+    height: 690px;
+  }
+}
+

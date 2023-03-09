@@ -24,6 +24,36 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+const breakpoint = window.matchMedia("(max-width: 767px)");
+const navigationMinus = document.querySelector(".navigation__minus");
+const addressMinus = document.querySelector(".address__minus");
+
+if (breakpoint.matches) {
+  const addressButton = document.querySelector(".address__title");
+  addressButton.addEventListener("click", () => {
+    if (addressButton.nextElementSibling.style.display != "none") {
+      addressButton.nextElementSibling.style.display = "none";
+      addressMinus.classList.add("plus");
+    } else {
+      addressMinus.classList.remove("plus");
+      addressButton.nextElementSibling.style.display = "block";
+    }
+  });
+
+  const navigationButton = document.querySelector(".navigation__title");
+  navigationButton.addEventListener("click", () => {
+    if (navigationButton.nextElementSibling.style.display != "none") {
+      navigationButton.nextElementSibling.style.display = "none";
+      navigationMinus.classList.add("plus");
+    } else {
+      navigationButton.nextElementSibling.style.display = "block";
+      navigationMinus.classList.remove("plus");
+    }
+  });
+};
+
+
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

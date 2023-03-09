@@ -8,6 +8,7 @@
 // Global
 // ---------------------------------
 
+@import "./global";
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -25,6 +26,18 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/header";
+@import "blocks/footer";
+
+// Main
+
+@import "blocks/main/heading";
+@import "blocks/main/main";
+
+// Footer
+
+@import "blocks/footer/address";
+@import "blocks/footer/navigation";
+@import "blocks/footer/socials";
 
 // ---------------------------------
 
