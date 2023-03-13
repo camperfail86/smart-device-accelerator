@@ -52,7 +52,17 @@ if (breakpoint.matches) {
   });
 };
 
-
+const additionAboutText = document.querySelector('.about__text--addition');
+const aboutButton = document.querySelector('.about__button');
+aboutButton.addEventListener('click', () => {
+  if (additionAboutText.style.display !== 'none') {
+    additionAboutText.style.display = 'none';
+    aboutButton.textContent = 'Подробнее';
+  } else {
+    additionAboutText.style.display = 'block';
+    aboutButton.textContent = 'Свернуть';
+  }
+});
 
 // ---------------------------------
 

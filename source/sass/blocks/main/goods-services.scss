@@ -1,0 +1,138 @@
+.goods-services__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1220px;
+  padding-left: 10px;
+}
+
+.goods-services__button {
+  width: 60px;
+  height: 60px;
+  background-color: $color-sky-blue;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  &::after {
+    position: absolute;
+    content: url("../../../img/svg/arrow.svg");
+    display: block;
+    background-color: $color-sky-blue;
+    top: 21px;
+    left: 28px;
+  }
+}
+
+.goods-services__bg {
+  background-color: $color-black-pearl;
+  padding-top: 70px;
+  padding-bottom: 140px;
+}
+
+.goods-services__list {
+  list-style-type: none;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1220px;
+  gap: 85px;
+}
+
+.goods-services__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  height: 650px;
+  max-width: 350px;
+  margin: 0;
+
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.goods-services__item {
+  // padding-top: 40px;
+  // padding-left: 50px;
+  height: 650px;
+  width: 350px;
+  position: relative;
+}
+
+.goods-services__item--first {
+  background-image: url("../../../img/first-bg.png");
+}
+
+.goods-services__item--second {
+  background-image: url("../../../img/second-bg.png");
+}
+
+.goods-services__item--third {
+  background-image: url("../../../img/third-bg.png");
+}
+
+@media (max-width: 1023px) {
+  .goods-services__title {
+    padding-left: 50px;
+  }
+
+  .goods-services__list {
+    width: 670px;
+    flex-direction: column;
+  }
+
+  .goods-services__text {
+    height: 250px;
+    max-width: 670px;
+  }
+
+  .goods-services__item--first {
+    background-image: url("../../../img/first-bg-tablet.png");
+  }
+
+  .goods-services__item--second {
+    background-image: url("../../../img/second-bg-tablet.png");
+  }
+
+  .goods-services__item--third {
+    background-image: url("../../../img/third-bg-tablet.png");
+  }
+
+  .goods-services__item {
+    height: 250px;
+    width: 670px;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .goods-services__button {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      top: 12px;
+      left: 18px;
+    }
+  }
+
+  .goods-services__list {
+    width: 85%;
+  }
+
+  .goods-services__item {
+    width: 100%;
+  }
+}
