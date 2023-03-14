@@ -25,6 +25,7 @@
     font-family: $ff-mono;
     color: $color-white;
     width: 100%;
+    position: fixed;
   }
 
   .header__container {
@@ -65,7 +66,7 @@
     margin-left: 145px;
     width: 160px;
     display: block;
-    font-family: 'Roboto';
+    font-family: $ff-roboto;
   }
 }
 

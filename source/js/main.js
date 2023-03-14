@@ -24,35 +24,35 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const breakpoint = window.matchMedia("(max-width: 767px)");
-const navigationMinus = document.querySelector(".navigation__minus");
-const addressMinus = document.querySelector(".address__minus");
+const breakpoint = window.matchMedia('(max-width: 767px)');
+const navigationMinus = document.querySelector('.navigation__minus');
+const addressMinus = document.querySelector('.address__minus');
 
 if (breakpoint.matches) {
-  const addressButton = document.querySelector(".address__title");
-  addressButton.addEventListener("click", () => {
-    if (addressButton.nextElementSibling.style.display != "none") {
-      addressButton.nextElementSibling.style.display = "none";
-      addressMinus.classList.add("plus");
+  const addressButton = document.querySelector('.address__title');
+  addressButton.addEventListener('click', () => {
+    if (addressButton.nextElementSibling.style.display != 'none') {
+      addressButton.nextElementSibling.style.display = 'none';
+      addressMinus.classList.add('plus');
     } else {
-      addressMinus.classList.remove("plus");
-      addressButton.nextElementSibling.style.display = "block";
+      addressMinus.classList.remove('plus');
+      addressButton.nextElementSibling.style.display = 'block';
     }
   });
 
-  const navigationButton = document.querySelector(".navigation__title");
-  navigationButton.addEventListener("click", () => {
-    if (navigationButton.nextElementSibling.style.display != "none") {
-      navigationButton.nextElementSibling.style.display = "none";
-      navigationMinus.classList.add("plus");
+  const navigationButton = document.querySelector('.navigation__title');
+  navigationButton.addEventListener('click', () => {
+    if (navigationButton.nextElementSibling.style.display != 'none') {
+      navigationButton.nextElementSibling.style.display = 'none';
+      navigationMinus.classList.add('plus');
     } else {
-      navigationButton.nextElementSibling.style.display = "block";
-      navigationMinus.classList.remove("plus");
+      navigationButton.nextElementSibling.style.display = 'block';
+      navigationMinus.classList.remove('plus');
     }
   });
 };
 
-const additionAboutText = document.querySelector('.about__text--addition');
+const additionAboutText = document.querySelector('.about__content--addition');
 const aboutButton = document.querySelector('.about__button');
 aboutButton.addEventListener('click', () => {
   if (additionAboutText.style.display !== 'none') {
@@ -63,6 +63,29 @@ aboutButton.addEventListener('click', () => {
     aboutButton.textContent = 'Свернуть';
   }
 });
+
+const openModalButton = document.querySelector('.header__button');
+const modal = document.querySelector('.modal');
+const closeModalButton = document.querySelector('.modal__close-btn');
+closeModalButton.addEventListener('click', () => {
+  modal.classList.remove('is-active');
+});
+openModalButton.addEventListener('click', () => {
+  modal.classList.add('is-active');
+});
+
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute('href');
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
 
 // ---------------------------------
 

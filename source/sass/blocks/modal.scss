@@ -62,7 +62,7 @@
     width: 600px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-sky-blue;
 
     @include vp-767 {
       width: 100%;
@@ -115,5 +115,145 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140.62%;
+    font-family: $ff-roboto;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  &__text {
+    margin: 15px 0 40px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $ff-mono;
+    color: $color-default-white;
+    width: 400px;
+  }
+
+  &__textarea {
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $ff-mono;
+    width: 100%;
+    padding: 25px 0 0 15px;
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+      margin: 0;
+    }
+  }
+
+  &__textarea {
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $ff-mono;
+    width: 100%;
+    padding: 25px 0 0 15px;
+    height: 155px;
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+      margin: 0;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__input {
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    font-family: $ff-mono;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+  }
+
+  &__button {
+    margin-top: 25px;
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+    background: #041427;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: $ff-roboto;
+    color: $color-default-white;
+    padding: 15px 25px;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+  }
+
+  &__approve {
+    width: 448px;
+    display: block;
+    padding-left: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+    font-family: $ff-mono;
+    opacity: 0.8;
+    position: relative;
+    margin-top: 20px;
+
+    &::before {
+      position: absolute;
+      content: url("../../../img/svg/checkbox.svg");
+      display: block;
+      height: 15px;
+      width: 15px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .modal__text {
+    width: auto;
+  }
+
+  .modal__approve {
+    width: auto;
   }
 }

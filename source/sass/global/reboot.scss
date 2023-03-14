@@ -33,6 +33,11 @@ body {
   background-color: $color-default-white;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 a {
   color: $color-default-black;
   text-decoration: none;

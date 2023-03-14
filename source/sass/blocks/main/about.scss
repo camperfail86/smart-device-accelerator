@@ -7,7 +7,7 @@
   margin-right: 100px;
 }
 
-.about__text--addition {
+.about__content--addition {
   display: none;
 }
 
@@ -78,6 +78,16 @@
   }
 
   .about__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black-pearl;
+    font-family: $ff-mono;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .about__content {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;

@@ -10,7 +10,7 @@
   }
 
   .heading__button {
-    font-family: "Roboto";
+    font-family: $ff-roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -31,7 +31,7 @@
   }
 
   .heading__button-text-desktop {
-    display: block;
+    display: inline;
   }
 
   .heading__button-text-mobile {
@@ -39,7 +39,7 @@
   }
 
   .heading {
-    padding-top: 225px;
+    padding-top: 340px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   .heading__button-text-desktop {
-    display: block;
+    display: inline;
   }
 
   .heading__button-text-mobile {
@@ -96,7 +96,7 @@
   }
 
   .heading__button-text-mobile {
-    display: block;
+    display: inline;
   }
 
   .heading__button {
