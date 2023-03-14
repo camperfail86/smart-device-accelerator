@@ -138,6 +138,7 @@
   font-family: $ff-mono;
   opacity: 0.8;
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;

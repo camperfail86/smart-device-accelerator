@@ -146,26 +146,8 @@
     line-height: 22px;
     font-family: $ff-mono;
     width: 100%;
-    padding: 25px 0 0 15px;
-    color: $color-default-white;
-
-    &::placeholder {
-      color: $color-default-white;
-      margin: 0;
-    }
-  }
-
-  &__textarea {
-    background: rgba(4, 20, 39, 0.15);
-    border-radius: 3px;
-    border: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    font-family: $ff-mono;
-    width: 100%;
-    padding: 25px 0 0 15px;
     height: 155px;
+    padding: 25px 0 0 15px;
     color: $color-default-white;
 
     &::placeholder {

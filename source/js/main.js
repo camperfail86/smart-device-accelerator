@@ -27,26 +27,35 @@ window.addEventListener('DOMContentLoaded', () => {
 const breakpoint = window.matchMedia('(max-width: 767px)');
 const navigationMinus = document.querySelector('.navigation__minus');
 const addressMinus = document.querySelector('.address__minus');
+const navigationList = document.querySelector('.navigation__list');
+const addressList = document.querySelector('.address__list');
 
 if (breakpoint.matches) {
+  navigationList.style.display = 'none';
+  addressList.style.display = 'none';
+
   const addressButton = document.querySelector('.address__title');
   addressButton.addEventListener('click', () => {
-    if (addressButton.nextElementSibling.style.display != 'none') {
+    if (addressButton.nextElementSibling.style.display !== 'none') {
       addressButton.nextElementSibling.style.display = 'none';
       addressMinus.classList.add('plus');
     } else {
       addressMinus.classList.remove('plus');
       addressButton.nextElementSibling.style.display = 'block';
+      navigationList.style.display = 'none';
+      navigationMinus.classList.add('plus');
     }
   });
 
   const navigationButton = document.querySelector('.navigation__title');
   navigationButton.addEventListener('click', () => {
-    if (navigationButton.nextElementSibling.style.display != 'none') {
+    if (navigationButton.nextElementSibling.style.display !== 'none') {
       navigationButton.nextElementSibling.style.display = 'none';
       navigationMinus.classList.add('plus');
     } else {
       navigationButton.nextElementSibling.style.display = 'block';
+      addressList.style.display = 'none';
+      addressMinus.classList.add('plus');
       navigationMinus.classList.remove('plus');
     }
   });

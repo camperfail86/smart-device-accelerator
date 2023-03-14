@@ -26,6 +26,7 @@
 
 .navigation__item {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .navigation__left {
@@ -80,7 +81,7 @@
       display: block;
       height: 1px;
       width: 100%;
-      background: rgba(248,253,255,.7);
+      background: rgba(248, 253, 255, 0.7);
       left: 0;
       top: 0;
     }

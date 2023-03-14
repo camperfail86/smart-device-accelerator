@@ -818,46 +818,8 @@ button,
   line-height: 22px;
   font-family: "PTMono", "Arial", sans-serif;
   width: 100%;
-  padding: 25px 0 0 15px;
-  color: #ffffff;
-}
-
-.modal__textarea::-webkit-input-placeholder {
-  color: #ffffff;
-  margin: 0;
-}
-
-.modal__textarea::-moz-placeholder {
-  color: #ffffff;
-  margin: 0;
-}
-
-.modal__textarea:-ms-input-placeholder {
-  color: #ffffff;
-  margin: 0;
-}
-
-.modal__textarea::-ms-input-placeholder {
-  color: #ffffff;
-  margin: 0;
-}
-
-.modal__textarea::placeholder {
-  color: #ffffff;
-  margin: 0;
-}
-
-.modal__textarea {
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: "PTMono", "Arial", sans-serif;
-  width: 100%;
-  padding: 25px 0 0 15px;
   height: 155px;
+  padding: 25px 0 0 15px;
   color: #ffffff;
 }
 
@@ -1831,6 +1793,7 @@ button,
   font-family: "PTMono", "Arial", sans-serif;
   opacity: 0.8;
   position: relative;
+  cursor: pointer;
 }
 
 .form__approve::before {
@@ -1855,6 +1818,7 @@ button,
 
 .address__item {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .address__list {
@@ -1898,6 +1862,7 @@ button,
 
 .navigation__item {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .navigation__left {
@@ -2369,7 +2334,7 @@ button,
   }
 
   .heading__button {
-    font-family: "Roboto";
+    font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
